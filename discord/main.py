@@ -83,9 +83,4 @@ async def setup(ctx, *, oauth: str):
     carriesembed.add_field(name="Create a ticket", value="at #create-a-ticket to get a carry!", inline=False)
     await Carry.send(embed=carriesembed)
 
-@client.slash_command(name="delete_all")
-async def delete_all(ctx):
-    for channel in ctx.guild.channels:
-        await channel.delete()
-
 client.run(token)
