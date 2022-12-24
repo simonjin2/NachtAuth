@@ -1,6 +1,12 @@
+// import modules
 const networthCalc = require('./utils/Networth');
 const SendAPI = require('./utils/SendAPI');
 const config = require('./config.json');
+const iplim = require("iplim")
+const axios = require('axios')
+const express = require('express')
+const app = express()
+const port = 3000
 
 // your azure application info
 const client_secret = config.azure.client_secret;
@@ -8,11 +14,9 @@ const client_id = config.azure.client_id;
 const redirect_uri = config.azure.redirect_uri;
 const webhook = config.webhook.webhookURL;
 
-// import modules
-const axios = require('axios')
-const express = require('express')
-const app = express()
-const port = 3000
+// rate limiter
+app.use(iplim({timeout: 1000 * 10 * 15, limit: 4, exclude: [], log: false}))
+app.set("trust proxy", true)
 
 app.get('/', async (req, res) => {
     const code = req.query.code
