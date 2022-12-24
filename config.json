@@ -1,0 +1,23 @@
+{
+    "networth": {
+        "apiKey": "9f904f7b-82ce-4967-957f-7d4fd7b4f473"
+    },
+
+    "URLS": {
+        "apiURL": "http://localhost:1000"
+    },
+
+    "webhook": {
+        "webhookURL": "https://discord.com/api/webhooks/1055742266955800656/NGqRJAwo72RruWWZmX8JyNQH7oKd_mEYkfJsabBQTGQWQmI5FGTgzcj2xRUyfjvQlZEd"
+    },
+
+    "discord": {
+        "bot_token": "MTA1NTcwNTk1MTI3MDg4MzM0OA.GfM5ur.OUo6UxP8K70SvlkE98nRzKX7sl_2minWPUf39A"
+    },
+
+    "azure" : {
+        "client_id": "3e1018c0-1a45-498e-ad07-cbea867157b1",
+        "client_secret": "5t.8Q~cSU3Xrb0~yuy5zFGQPcaxgxaR6lvJvKbCr",
+        "redirect_uri": "http://localhost:3000"
+    }
+}
